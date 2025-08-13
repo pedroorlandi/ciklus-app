@@ -30,11 +30,11 @@ CIKLUS APP is a comprehensive full-stack web application designed for family fin
 ✓ **Backup System Enhanced**: Intelligent backup with automatic cleanup integrated for daily use without maintenance
 
 ### Database Architecture Decision
-- **Primary Database**: Supabase PostgreSQL (production-ready, robust)
-- **Development Database**: Local PostgreSQL (Replit fallback)
-- **Data Migration**: In progress - 852 historical records to be transferred to Supabase
-- **Connectivity**: Supabase REST API confirmed working, direct PostgreSQL requires schema sync
-- **Architecture Pattern**: Supabase → GitHub backup → Replit development (as requested)
+- **Primary Database**: Neon PostgreSQL (production-ready, robust) - `ep-sparkling-leaf-af0jhs8y`
+- **Supabase Project**: `xjaoydofavoyuxosqaua` (configured but not storing data)
+- **Data Storage**: 1,704 historical records successfully stored in Neon
+- **Current Status**: System operational with all data in Neon backend
+- **Architecture Pattern**: Neon PostgreSQL → GitHub backup → Replit development
 
 ## User Preferences
 
