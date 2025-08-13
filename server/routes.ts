@@ -1380,6 +1380,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Importar e registrar rotas de administração de banco
+  const adminRouter = await import('./routes/admin').then(m => m.default);
+  app.use('/api/admin', authMiddleware, adminRouter);
+
   // Development shortcut - bypass login and go directly to dashboard
   app.get('/dev', (req, res) => {
     res.redirect('/dashboard?demo=auto');

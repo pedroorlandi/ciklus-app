@@ -22,6 +22,8 @@ import Indices from "@/pages/indices";
 import Dados from "@/pages/dados";
 import Simulacoes from "@/pages/simulacoes";
 import Admin from "@/pages/admin";
+import DatabaseAdmin from "@/pages/database-admin";
+import ControleNeon from "@/pages/controle-neon";
 import Configuracoes from "@/pages/configuracoes";
 
 
@@ -108,6 +110,14 @@ function Router() {
       <Route 
         path="/admin" 
         element={isAuthenticated ? <Admin /> : <Login />} 
+      />
+      <Route 
+        path="/database-admin" 
+        element={isAuthenticated ? <DatabaseAdmin /> : <Login />} 
+      />
+      <Route 
+        path="/controle-neon" 
+        element={isAuthenticated ? <ControleNeon /> : <Login />} 
       />
       <Route 
         path="/configuracoes" 
