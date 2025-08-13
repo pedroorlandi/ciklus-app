@@ -1,0 +1,43 @@
+2025-07-19T20:38:00.766153788Z ==> Cloning from https://github.com/pedroorlandi/Ciklus-App
+2025-07-19T20:38:01.579616158Z ==> Checking out commit dc25bc414e8bc452ae3750084e9f5e14cfde811f in branch main
+2025-07-19T20:38:03.749877439Z ==> Using Node.js version 22.16.0 (default)
+2025-07-19T20:38:03.776181571Z ==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+2025-07-19T20:38:05.712069753Z ==> Using Bun version 1.1.0 (default)
+2025-07-19T20:38:05.712092464Z ==> Docs on specifying a Bun version: https://render.com/docs/bun-version
+2025-07-19T20:38:05.794997633Z ==> Running build command 'npm install'...
+2025-07-19T20:38:50.876225255Z 
+2025-07-19T20:38:50.876245776Z added 398 packages, and audited 399 packages in 45s
+2025-07-19T20:38:50.876255886Z 
+2025-07-19T20:38:50.876279337Z 58 packages are looking for funding
+2025-07-19T20:38:50.876291977Z   run `npm fund` for details
+2025-07-19T20:38:50.877253226Z 
+2025-07-19T20:38:50.877261857Z found 0 vulnerabilities
+2025-07-19T20:38:54.202518672Z ==> Uploading build...
+2025-07-19T20:39:02.609223236Z ==> Uploaded in 5.2s. Compression took 3.2s
+2025-07-19T20:39:02.633120635Z ==> Build successful 🎉
+2025-07-19T20:39:04.63508387Z ==> Deploying...
+2025-07-19T20:39:25.145283099Z ==> Running 'node dist/server.js'
+2025-07-19T20:39:32.343491965Z 🚀 CIKLUS APP running on port 10000
+2025-07-19T20:39:32.343522286Z 🌐 Production URL: https://ciklus-app.onrender.com
+2025-07-19T20:39:32.343525266Z 📱 Local: http://localhost:10000
+2025-07-19T20:39:33.244387313Z Error 404: ENOENT: no such file or directory, stat '/opt/render/project/src/dist/client/index.html'
+2025-07-19T20:39:35.052408081Z GET /api/health 200 in 2ms
+2025-07-19T20:39:35.054368066Z GET /api/health 200 in 1ms
+2025-07-19T20:39:35.205264066Z ==> Your service is live 🎉
+2025-07-19T20:39:35.234529892Z ==> 
+2025-07-19T20:39:35.261366499Z ==> ///////////////////////////////////////////////////////////
+2025-07-19T20:39:35.290622636Z ==> 
+2025-07-19T20:39:35.324836572Z ==> Available at your primary URL https://ciklus-app.onrender.com
+2025-07-19T20:39:35.350982269Z ==> 
+2025-07-19T20:39:35.378869616Z ==> ///////////////////////////////////////////////////////////
+2025-07-19T20:39:36.162992766Z Error 404: ENOENT: no such file or directory, stat '/opt/render/project/src/dist/client/index.html'
+2025-07-19T20:39:40.051109827Z GET /api/health 200 in 0ms
+2025-07-19T20:39:45.053628709Z GET /api/health 200 in 0ms
+2025-07-19T20:39:50.052437575Z GET /api/health 200 in 1ms
+2025-07-19T20:39:55.052854807Z GET /api/health 200 in 1ms
+2025-07-19T20:40:00.052036663Z GET /api/health 200 in 1ms
+2025-07-19T20:40:05.051681891Z GET /api/health 200 in 1ms
+2025-07-19T20:40:05.05270664Z GET /api/health 200 in 0ms
+2025-07-19T20:40:10.05137284Z GET /api/health 200 in 1ms
+2025-07-19T20:40:15.051243413Z GET /api/health 200 in 1ms
+2025-07-19T20:40:20.051198828Z GET /api/health 200 in 0ms

@@ -1,0 +1,30 @@
+2025-07-20T19:31:59.382645905Z ==> Cloning from https://github.com/pedroorlandi/Ciklus-App
+2025-07-20T19:32:00.166042872Z ==> Checking out commit 54b90d821ae1d331c92a9bf3e2126ef56a97f0ca in branch main
+2025-07-20T19:32:01.360118495Z ==> Downloading cache...
+2025-07-20T19:32:18.168711816Z ==> Transferred 207MB in 7s. Extraction took 6s.
+2025-07-20T19:32:32.67727297Z ==> Using Node.js version 22.16.0 (default)
+2025-07-20T19:32:32.702827633Z ==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+2025-07-20T19:32:32.851653933Z ==> Using Bun version 1.1.0 (default)
+2025-07-20T19:32:32.851667905Z ==> Docs on specifying a Bun version: https://render.com/docs/bun-version
+2025-07-20T19:32:32.910981257Z ==> Running build command 'npm install'...
+2025-07-20T19:32:35.579473329Z 
+2025-07-20T19:32:35.579503731Z up to date, audited 399 packages in 3s
+2025-07-20T19:32:35.579516692Z 
+2025-07-20T19:32:35.579527153Z 58 packages are looking for funding
+2025-07-20T19:32:35.579533284Z   run `npm fund` for details
+2025-07-20T19:32:35.580419257Z 
+2025-07-20T19:32:35.580464991Z found 0 vulnerabilities
+2025-07-20T19:32:36.587275414Z ==> Uploading build...
+2025-07-20T19:32:45.613763287Z ==> Uploaded in 6.5s. Compression took 2.5s
+2025-07-20T19:32:45.636174761Z ==> Build successful 🎉
+2025-07-20T19:32:48.218169698Z ==> Deploying...
+2025-07-20T19:33:11.945449616Z ==> Running 'node dist/server.cjs'
+2025-07-20T19:33:13.049264925Z 🚀 CIKLUS APP executando na porta 10000
+2025-07-20T19:33:13.049625764Z 📱 Versão 3.0 - Layout definitivo
+2025-07-20T19:33:18.893557266Z ==> Your service is live 🎉
+2025-07-20T19:33:18.919551583Z ==> 
+2025-07-20T19:33:18.94364498Z ==> ///////////////////////////////////////////////////////////
+2025-07-20T19:33:18.969197617Z ==> 
+2025-07-20T19:33:18.993799674Z ==> Available at your primary URL https://ciklus-app.onrender.com
+2025-07-20T19:33:19.018494011Z ==> 
+2025-07-20T19:33:19.043852578Z ==> ///////////////////////////////////////////////////////////

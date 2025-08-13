@@ -1,0 +1,58 @@
+2025-07-19T17:58:09.179820523Z ==> Cloning from https://github.com/pedroorlandi/Ciklus-App
+2025-07-19T17:58:09.950912571Z ==> Checking out commit ea71cfbb9fdf08ecc32b896ec9bbfe9c220f4a58 in branch main
+2025-07-19T17:58:14.321344049Z ==> Using Node.js version 22.16.0 (default)
+2025-07-19T17:58:14.346627474Z ==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+2025-07-19T17:58:16.313483838Z ==> Using Bun version 1.1.0 (default)
+2025-07-19T17:58:16.313506018Z ==> Docs on specifying a Bun version: https://render.com/docs/bun-version
+2025-07-19T17:58:16.373818518Z ==> Running build command 'npm install --production'...
+2025-07-19T17:59:04.085605428Z 
+2025-07-19T17:59:04.085639178Z added 398 packages, and audited 399 packages in 48s
+2025-07-19T17:59:04.085654028Z 
+2025-07-19T17:59:04.085665209Z 58 packages are looking for funding
+2025-07-19T17:59:04.085671709Z   run `npm fund` for details
+2025-07-19T17:59:04.086729587Z 
+2025-07-19T17:59:04.086745818Z found 0 vulnerabilities
+2025-07-19T17:59:07.809900547Z ==> Uploading build...
+2025-07-19T17:59:15.117763752Z ==> Uploaded in 4.2s. Compression took 3.1s
+2025-07-19T17:59:15.13984035Z ==> Build successful 🎉
+2025-07-19T17:59:17.156722743Z ==> Deploying...
+2025-07-19T17:59:37.949176055Z ==> Running 'node dist/index.js'
+2025-07-19T17:59:38.558167928Z node:internal/modules/package_json_reader:256
+2025-07-19T17:59:38.558201369Z   throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+2025-07-19T17:59:38.558205349Z         ^
+2025-07-19T17:59:38.558208509Z 
+2025-07-19T17:59:38.558215429Z Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'vite' imported from /opt/render/project/src/dist/index.js
+2025-07-19T17:59:38.558221319Z     at Object.getPackageJSONURL (node:internal/modules/package_json_reader:256:9)
+2025-07-19T17:59:38.558225179Z     at packageResolve (node:internal/modules/esm/resolve:768:81)
+2025-07-19T17:59:38.55822881Z     at moduleResolve (node:internal/modules/esm/resolve:854:18)
+2025-07-19T17:59:38.55823211Z     at defaultResolve (node:internal/modules/esm/resolve:984:11)
+2025-07-19T17:59:38.55823525Z     at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+2025-07-19T17:59:38.5582383Z     at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+2025-07-19T17:59:38.55824154Z     at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+2025-07-19T17:59:38.55824505Z     at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+2025-07-19T17:59:38.55824849Z     at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+2025-07-19T17:59:38.55825311Z   code: 'ERR_MODULE_NOT_FOUND'
+2025-07-19T17:59:38.55825529Z }
+2025-07-19T17:59:38.55825726Z 
+2025-07-19T17:59:38.55825944Z Node.js v22.16.0
+2025-07-19T17:59:42.528870799Z ==> Exited with status 1
+2025-07-19T17:59:42.548030677Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2025-07-19T17:59:49.523097699Z ==> Running 'node dist/index.js'
+2025-07-19T17:59:50.216173447Z node:internal/modules/package_json_reader:256
+2025-07-19T17:59:50.216208928Z   throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+2025-07-19T17:59:50.216213948Z         ^
+2025-07-19T17:59:50.216217359Z 
+2025-07-19T17:59:50.216221468Z Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'vite' imported from /opt/render/project/src/dist/index.js
+2025-07-19T17:59:50.216230639Z     at Object.getPackageJSONURL (node:internal/modules/package_json_reader:256:9)
+2025-07-19T17:59:50.216234819Z     at packageResolve (node:internal/modules/esm/resolve:768:81)
+2025-07-19T17:59:50.216238289Z     at moduleResolve (node:internal/modules/esm/resolve:854:18)
+2025-07-19T17:59:50.216241709Z     at defaultResolve (node:internal/modules/esm/resolve:984:11)
+2025-07-19T17:59:50.216245019Z     at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+2025-07-19T17:59:50.216248109Z     at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+2025-07-19T17:59:50.216250779Z     at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+2025-07-19T17:59:50.216254249Z     at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+2025-07-19T17:59:50.216257439Z     at ModuleJob._link (node:internal/modules/esm/module_job:137:49) {
+2025-07-19T17:59:50.216261589Z   code: 'ERR_MODULE_NOT_FOUND'
+2025-07-19T17:59:50.21626482Z }
+2025-07-19T17:59:50.21626782Z 
+2025-07-19T17:59:50.21627135Z Node.js v22.16.0

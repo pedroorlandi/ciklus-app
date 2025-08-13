@@ -1,0 +1,34 @@
+# Arquivos de backup grandes
+*.tar.gz
+*.zip
+emergency-backup-*/
+backup-*/
+*.sql.bak
+
+# Node modules
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/

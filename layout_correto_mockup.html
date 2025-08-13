@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIKLUS APP - Layout Correto</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: system-ui, sans-serif; 
+      background: linear-gradient(135deg, #27156B, #8F9DA7);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card { 
+      background: white; 
+      padding: 60px; 
+      border-radius: 20px; 
+      text-align: center; 
+      max-width: 500px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+    .logo-text { 
+      font-size: 3rem; 
+      color: #27156B; 
+      font-weight: bold; 
+      margin-bottom: 20px; 
+      letter-spacing: 3px;
+    }
+    .title { 
+      font-size: 2rem; 
+      color: #27156B; 
+      margin-bottom: 15px; 
+    }
+    .subtitle { 
+      color: #8F9DA7; 
+      font-size: 1.2rem; 
+      margin-bottom: 40px; 
+    }
+    .status { 
+      background: #f0f8ff; 
+      border: 2px solid #27156B; 
+      padding: 30px; 
+      border-radius: 15px; 
+      margin-bottom: 40px; 
+    }
+    .status h3 { 
+      color: #27156B; 
+      margin-bottom: 20px; 
+    }
+    .feature { 
+      background: white; 
+      padding: 15px; 
+      margin: 10px 0; 
+      border-radius: 8px; 
+      border-left: 4px solid #27156B; 
+      text-align: left;
+    }
+    .buttons { 
+      display: flex; 
+      gap: 20px; 
+      justify-content: center; 
+      margin-bottom: 30px; 
+      flex-wrap: wrap;
+    }
+    .btn { 
+      background: #27156B; 
+      color: white; 
+      padding: 20px 40px; 
+      border: none; 
+      border-radius: 10px; 
+      font-size: 1.1rem; 
+      font-weight: bold; 
+      cursor: pointer; 
+      text-decoration: none; 
+      display: inline-block;
+      min-width: 200px;
+      transition: all 0.3s;
+    }
+    .btn:hover { 
+      background: #1a0f4a; 
+      transform: translateY(-2px); 
+    }
+    .btn-gray { 
+      background: #8F9DA7; 
+    }
+    .btn-gray:hover { 
+      background: #7a8690; 
+    }
+    .version { 
+      color: #8F9DA7; 
+      margin-top: 20px; 
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo-text">CIKLUS</div>
+    <h1 class="title">CIKLUS APP</h1>
+    <p class="subtitle">Planejamento Financeiro Familiar Inteligente</p>
+    
+    <div class="status">
+      <h3>✅ Sistema Operacional</h3>
+      <div class="feature">🏛️ Website institucional ativo</div>
+      <div class="feature">🔐 Sistema de autenticação funcional</div>
+      <div class="feature">📊 APIs e banco de dados online</div>
+      <div class="feature">💼 Módulos de gestão disponíveis</div>
+    </div>
+    
+    <div class="buttons">
+      <a href="#" class="btn">ACESSAR SISTEMA</a>
+      <button class="btn btn-gray">RECARREGAR</button>
+    </div>
+    
+    <div class="version">Versão 3.1 | Ultra Simples | Sempre Funciona</div>
+  </div>
+</body>
+</html>

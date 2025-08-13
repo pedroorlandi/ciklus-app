@@ -1,0 +1,24 @@
+CIKLUS APP - Relatório de Backup
+================================
+Data: 2025-08-13 16:50:56
+Ambiente: development
+
+ESTATÍSTICAS DA BASE DE DADOS:
+ Planejamentos: 2
+ Membros: 5
+ Dados Mensais: 1704
+
+TAMANHO DOS ARQUIVOS BACKUP:
+total 3.3M
+-rw-r--r-- 1 runner runner 1.2M Aug 13 16:50 ciklus-codigo-20250813-165032.tar.gz
+-rw-r--r-- 1 runner runner 1.2M Aug 13 16:50 ciklus-codigo-20250813-165054.tar.gz
+-rw-r--r-- 1 runner runner 428K Aug 13 16:50 database-backup-20250813-165032.sql
+-rw-r--r-- 1 runner runner 428K Aug 13 16:50 database-backup-20250813-165054.sql
+-rw-r--r-- 1 runner runner  325 Aug 13 16:50 drizzle.config.ts
+-rw-r--r-- 1 runner runner 3.8K Aug 13 16:50 package.json
+-rw-r--r-- 1 runner runner 161K Aug 13 16:50 package-lock.json
+-rw-r--r-- 1 runner runner    0 Aug 13 16:50 status-report.txt
+-rw-r--r-- 1 runner runner  783 Aug 13 16:50 tsconfig.json
+
+ÚLTIMO COMMIT GIT:
+a8e2e5a Extend monthly data for all financial planning until the youngest provider reaches 100 years

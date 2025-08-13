@@ -1,0 +1,50 @@
+2025-07-20T18:41:46.338779036Z ==> Using Bun version 1.1.0 (default)
+2025-07-20T18:41:46.338800957Z ==> Docs on specifying a Bun version: https://render.com/docs/bun-version
+2025-07-20T18:41:46.40508969Z ==> Running build command 'npm install'...
+2025-07-20T18:42:07.982481912Z 
+2025-07-20T18:42:07.983861874Z up to date, audited 399 packages in 21s
+2025-07-20T18:42:07.983876035Z 
+2025-07-20T18:42:07.983879645Z 58 packages are looking for funding
+2025-07-20T18:42:07.983891575Z   run `npm fund` for details
+2025-07-20T18:42:07.983894496Z 
+2025-07-20T18:42:07.983898206Z found 0 vulnerabilities
+2025-07-20T18:42:09.255266736Z ==> Uploading build...
+2025-07-20T18:42:37.213739897Z ==> Uploaded in 4.6s. Compression took 23.3s
+2025-07-20T18:42:37.239517188Z ==> Build successful 🎉
+2025-07-20T18:42:38.83034429Z ==> Deploying...
+2025-07-20T18:42:59.703115632Z ==> Running 'node dist/server.cjs'
+2025-07-20T18:42:59.90674761Z /opt/render/project/src/dist/server.cjs:110
+2025-07-20T18:42:59.90676555Z 
+2025-07-20T18:42:59.9067691Z 
+2025-07-20T18:42:59.90677235Z 
+2025-07-20T18:42:59.9067755Z SyntaxError: Unexpected end of input
+2025-07-20T18:42:59.906779691Z     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+2025-07-20T18:42:59.906783591Z     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+2025-07-20T18:42:59.906786721Z     at Object..js (node:internal/modules/cjs/loader:1895:10)
+2025-07-20T18:42:59.906835992Z     at Module.load (node:internal/modules/cjs/loader:1465:32)
+2025-07-20T18:42:59.906839982Z     at Function._load (node:internal/modules/cjs/loader:1282:12)
+2025-07-20T18:42:59.906843142Z     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-20T18:42:59.906846862Z     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+2025-07-20T18:42:59.906850702Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-07-20T18:42:59.906855202Z     at node:internal/main/run_main_module:36:49
+2025-07-20T18:42:59.906858042Z 
+2025-07-20T18:42:59.906861343Z Node.js v22.16.0
+2025-07-20T18:43:00.757581513Z ==> Exited with status 1
+2025-07-20T18:43:00.776379472Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2025-07-20T18:43:07.051798326Z ==> Running 'node dist/server.cjs'
+2025-07-20T18:43:07.252278873Z /opt/render/project/src/dist/server.cjs:110
+2025-07-20T18:43:07.252319714Z 
+2025-07-20T18:43:07.252322854Z 
+2025-07-20T18:43:07.252325024Z 
+2025-07-20T18:43:07.252328334Z SyntaxError: Unexpected end of input
+2025-07-20T18:43:07.252332204Z     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+2025-07-20T18:43:07.252335284Z     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+2025-07-20T18:43:07.252337004Z     at Object..js (node:internal/modules/cjs/loader:1895:10)
+2025-07-20T18:43:07.252338844Z     at Module.load (node:internal/modules/cjs/loader:1465:32)
+2025-07-20T18:43:07.252340544Z     at Function._load (node:internal/modules/cjs/loader:1282:12)
+2025-07-20T18:43:07.252342264Z     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-20T18:43:07.252344004Z     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+2025-07-20T18:43:07.252346375Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-07-20T18:43:07.252349335Z     at node:internal/main/run_main_module:36:49
+2025-07-20T18:43:07.252350964Z 
+2025-07-20T18:43:07.252352715Z Node.js v22.16.0

@@ -1,0 +1,52 @@
+2025-07-19T19:55:36.871077221Z ==> Cloning from https://github.com/pedroorlandi/Ciklus-App
+2025-07-19T19:55:37.690204178Z ==> Checking out commit 259b5898ba5ca243347d4a9101e2475b0860a708 in branch main
+2025-07-19T19:55:39.967401676Z ==> Using Node.js version 22.16.0 (default)
+2025-07-19T19:55:39.993537064Z ==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+2025-07-19T19:55:42.369589367Z ==> Using Bun version 1.1.0 (default)
+2025-07-19T19:55:42.369607267Z ==> Docs on specifying a Bun version: https://render.com/docs/bun-version
+2025-07-19T19:55:42.435168027Z ==> Running build command 'echo "Using pre-built production server"'...
+2025-07-19T19:55:42.438441725Z Using pre-built production server
+2025-07-19T19:55:48.298955089Z ==> Uploading build...
+2025-07-19T19:55:53.271181575Z ==> Uploaded in 4.2s. Compression took 0.8s
+2025-07-19T19:55:53.284444228Z ==> Build successful 🎉
+2025-07-19T19:55:55.312999126Z ==> Deploying...
+2025-07-19T19:56:09.055578467Z ==> Exited with status 1
+2025-07-19T19:56:09.072466785Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2025-07-19T19:56:08.282432217Z ==> Running 'node dist/production-server.js'
+2025-07-19T19:56:08.480830723Z node:internal/modules/cjs/loader:1404
+2025-07-19T19:56:08.480857164Z   throw err;
+2025-07-19T19:56:08.480860554Z   ^
+2025-07-19T19:56:08.480862944Z 
+2025-07-19T19:56:08.480866654Z Error: Cannot find module '/opt/render/project/src/dist/production-server.js'
+2025-07-19T19:56:08.480869554Z     at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+2025-07-19T19:56:08.480872044Z     at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+2025-07-19T19:56:08.480874574Z     at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+2025-07-19T19:56:08.480877844Z     at Function._load (node:internal/modules/cjs/loader:1211:37)
+2025-07-19T19:56:08.480880654Z     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-19T19:56:08.480883244Z     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+2025-07-19T19:56:08.480886604Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-07-19T19:56:08.480891334Z     at node:internal/main/run_main_module:36:49 {
+2025-07-19T19:56:08.480894364Z   code: 'MODULE_NOT_FOUND',
+2025-07-19T19:56:08.480897505Z   requireStack: []
+2025-07-19T19:56:08.480900074Z }
+2025-07-19T19:56:08.480902465Z 
+2025-07-19T19:56:08.480904854Z Node.js v22.16.0
+2025-07-19T19:56:14.039278308Z ==> Running 'node dist/production-server.js'
+2025-07-19T19:56:14.239713383Z node:internal/modules/cjs/loader:1404
+2025-07-19T19:56:14.239741393Z   throw err;
+2025-07-19T19:56:14.239744933Z   ^
+2025-07-19T19:56:14.239747384Z 
+2025-07-19T19:56:14.239750584Z Error: Cannot find module '/opt/render/project/src/dist/production-server.js'
+2025-07-19T19:56:14.239753114Z     at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+2025-07-19T19:56:14.239755954Z     at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+2025-07-19T19:56:14.239759174Z     at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+2025-07-19T19:56:14.239762094Z     at Function._load (node:internal/modules/cjs/loader:1211:37)
+2025-07-19T19:56:14.239764214Z     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-19T19:56:14.239766244Z     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+2025-07-19T19:56:14.239768664Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-07-19T19:56:14.239772774Z     at node:internal/main/run_main_module:36:49 {
+2025-07-19T19:56:14.239775454Z   code: 'MODULE_NOT_FOUND',
+2025-07-19T19:56:14.239777934Z   requireStack: []
+2025-07-19T19:56:14.239780004Z }
+2025-07-19T19:56:14.239782034Z 
+2025-07-19T19:56:14.239784624Z Node.js v22.16.0

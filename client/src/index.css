@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(256, 67%, 35%); /* #27156B - Roxo CIKLUS */
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(256, 25%, 92%); /* Roxo Claro */
+  --secondary-foreground: hsl(256, 20%, 25%); /* Roxo Escuro */
+  --accent: hsl(256, 35%, 88%); /* Roxo Acentuado Claro */
+  --accent-foreground: hsl(256, 20%, 25%); /* Roxo Escuro */
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(256, 67%, 35%); /* Roxo CIKLUS para foco */
+  --radius: 0.5rem;
+  
+  /* CIKLUS Brand Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  
+  /* Custom colors - Paleta Roxo CIKLUS */
+  --primary-50: hsl(256, 60%, 97%);
+  --primary-100: hsl(256, 55%, 93%);
+  --primary-500: hsl(256, 67%, 35%); /* #27156B - Roxo CIKLUS */
+  --primary-600: hsl(256, 67%, 28%);
+  --primary-700: hsl(256, 67%, 21%);
+  
+  --success-50: hsl(120, 60%, 95%);
+  --success-100: hsl(120, 55%, 88%);
+  --success-500: hsl(122, 39%, 49%);
+  --success-600: hsl(122, 49%, 42%);
+  
+  --warning-50: hsl(38, 100%, 95%);
+  --warning-100: hsl(38, 100%, 88%);
+  --warning-500: hsl(38, 92%, 50%);
+  --warning-600: hsl(32, 95%, 44%);
+  
+  --error-50: hsl(0, 86%, 97%);
+  --error-100: hsl(0, 93%, 94%);
+  --error-500: hsl(4, 90%, 58%);
+  --error-600: hsl(4, 93%, 66%);
+}
+
+/* CIKLUS Brand Typography */
+* {
+  font-family: var(--font-family);
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 300; /* UniNeueLight equivalent */
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom utility classes for the financial app */
+.currency-positive {
+  @apply text-green-600;
+}
+
+.currency-negative {
+  @apply text-red-600;
+}
+
+.status-active {
+  @apply bg-green-100 text-green-800;
+}
+
+.status-inactive {
+  @apply bg-gray-100 text-gray-800;
+}
+
+.status-completed {
+  @apply bg-blue-100 text-blue-800;
+}
+
+/* Institutional Site Styles */
+/* Enhanced reveal animations */
+.reveal {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animation delays */
+.reveal.delay-300 {
+  transition-delay: 0.3s;
+}
+
+.reveal.delay-600 {
+  transition-delay: 0.6s;
+}
+
+/* Tabela de dados mensais com scroll fixo */
+.dados-table-container {
+  height: calc(100vh - 400px);
+  overflow: auto;
+  border: 1px solid hsl(20, 5.9%, 90%);
+  border-radius: 0.5rem;
+}
+
+.dados-table {
+  min-width: 1400px;
+}
+
+.dados-table .sticky-col {
+  position: sticky;
+  left: 0;
+  background: white;
+  border-right: 2px solid hsl(20, 5.9%, 90%);
+  z-index: 10;
+}
+
+.dados-table .sticky-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 5;
+}
+
+.dados-table .sticky-col.sticky-header {
+  z-index: 15;
+}
+
+/* Reduced motion for better mobile performance */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: opacity 0.5s ease;
+    transform: none;
+  }
+
+  .reveal.active {
+    transform: none;
+  }
+
+  .animate-bounce,
+  .animate-pulse,
+  .animate-fade-in,
+  .animate-orbit-1,
+  .animate-orbit-2,
+  .animate-orbit-3 {
+    animation: none;
+  }
+}
+
+/* Custom fade-in animations with delays */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Orbiting elements around logo */
+@keyframes orbit1 {
+  0% {
+    transform: rotate(0deg) translateX(120px) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) translateX(120px) rotate(-360deg);
+    opacity: 0.6;
+  }
+}
+
+@keyframes orbit2 {
+  0% {
+    transform: rotate(120deg) translateX(80px) rotate(-120deg);
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(480deg) translateX(80px) rotate(-480deg);
+    opacity: 0.4;
+  }
+}
+
+@keyframes orbit3 {
+  0% {
+    transform: rotate(240deg) translateX(60px) rotate(-240deg);
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(600deg) translateX(60px) rotate(-600deg);
+    opacity: 0.3;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+.animate-orbit-1 {
+  animation: orbit1 15s linear infinite;
+}
+
+.animate-orbit-2 {
+  animation: orbit2 20s linear infinite reverse;
+}
+
+.animate-orbit-3 {
+  animation: orbit3 25s linear infinite;
+}
+
+.animate-fade-in.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-fade-in.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animate-fade-in.delay-600 {
+  animation-delay: 0.6s;
+}
+
+.animate-fade-in.delay-700 {
+  animation-delay: 0.7s;
+}
+
+.animate-fade-in.delay-800 {
+  animation-delay: 0.8s;
+}
+
+/* Logo container for better positioning of orbital elements */
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Gradient utilities for sophisticated backgrounds */
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}
+
+/* Institutional layout utilities */
+.section-padding {
+  @apply py-12 sm:py-16 md:py-20 lg:py-24;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Better font rendering on mobile */
+@media screen and (max-width: 768px) {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}

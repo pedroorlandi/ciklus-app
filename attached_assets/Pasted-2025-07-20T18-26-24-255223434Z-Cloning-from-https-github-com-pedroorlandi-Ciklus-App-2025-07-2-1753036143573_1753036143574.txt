@@ -1,0 +1,32 @@
+2025-07-20T18:26:24.255223434Z ==> Cloning from https://github.com/pedroorlandi/Ciklus-App
+2025-07-20T18:26:25.037610077Z ==> Checking out commit 2ce32646d991129da73c921f6abf3b517abb80f4 in branch main
+2025-07-20T18:26:26.316638571Z ==> Downloading cache...
+2025-07-20T18:26:40.160217189Z ==> Transferred 207MB in 7s. Extraction took 5s.
+2025-07-20T18:26:45.560823099Z ==> Using Node.js version 22.16.0 (default)
+2025-07-20T18:26:45.585998396Z ==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+2025-07-20T18:26:45.745243504Z ==> Using Bun version 1.1.0 (default)
+2025-07-20T18:26:45.745264125Z ==> Docs on specifying a Bun version: https://render.com/docs/bun-version
+2025-07-20T18:26:45.812230191Z ==> Running build command 'npm install'...
+2025-07-20T18:26:59.765499281Z 
+2025-07-20T18:26:59.765528152Z up to date, audited 399 packages in 14s
+2025-07-20T18:26:59.765540433Z 
+2025-07-20T18:26:59.765547143Z 58 packages are looking for funding
+2025-07-20T18:26:59.765555554Z   run `npm fund` for details
+2025-07-20T18:26:59.766937386Z 
+2025-07-20T18:26:59.766954917Z found 0 vulnerabilities
+2025-07-20T18:27:16.500385495Z ==> Uploading build...
+2025-07-20T18:27:25.751677474Z ==> Uploaded in 5.9s. Compression took 3.3s
+2025-07-20T18:27:25.776226204Z ==> Build successful 🎉
+2025-07-20T18:27:48.391485725Z ==> Deploying...
+2025-07-20T18:28:08.963788885Z ==> Running 'node dist/server.cjs'
+2025-07-20T18:28:10.060104788Z 🚀 CIKLUS APP running on port 10000
+2025-07-20T18:28:10.060333043Z 🌐 Production URL: https://ciklus-app.onrender.com
+2025-07-20T18:28:10.060339333Z 📱 Version 2.5.0 - Hybrid Solution (NEVER fails)
+2025-07-20T18:28:10.060345203Z ⚡ Institutional page guaranteed + React fallback
+2025-07-20T18:28:19.121252609Z ==> Your service is live 🎉
+2025-07-20T18:28:19.146414676Z ==> 
+2025-07-20T18:28:19.169978503Z ==> ///////////////////////////////////////////////////////////
+2025-07-20T18:28:19.193573671Z ==> 
+2025-07-20T18:28:19.218008798Z ==> Available at your primary URL https://ciklus-app.onrender.com
+2025-07-20T18:28:19.242036575Z ==> 
+2025-07-20T18:28:19.264544982Z ==> ///////////////////////////////////////////////////////////

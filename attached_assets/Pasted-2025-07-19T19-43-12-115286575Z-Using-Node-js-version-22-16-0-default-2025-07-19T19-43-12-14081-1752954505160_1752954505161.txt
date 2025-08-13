@@ -1,0 +1,50 @@
+2025-07-19T19:43:12.115286575Z ==> Using Node.js version 22.16.0 (default)
+2025-07-19T19:43:12.140813577Z ==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+2025-07-19T19:43:14.006243769Z ==> Using Bun version 1.1.0 (default)
+2025-07-19T19:43:14.00628592Z ==> Docs on specifying a Bun version: https://render.com/docs/bun-version
+2025-07-19T19:43:14.065455312Z ==> Running build command 'echo "Using pre-built production server"'...
+2025-07-19T19:43:14.068490875Z Using pre-built production server
+2025-07-19T19:43:15.07725663Z ==> Uploading build...
+2025-07-19T19:43:19.284519462Z ==> Uploaded in 3.5s. Compression took 0.7s
+2025-07-19T19:43:19.296764398Z ==> Build successful 🎉
+2025-07-19T19:43:21.598852077Z ==> Deploying...
+2025-07-19T19:43:35.131019213Z ==> Running 'node dist/production-server.js'
+2025-07-19T19:43:35.327315933Z node:internal/modules/cjs/loader:1404
+2025-07-19T19:43:35.327340964Z   throw err;
+2025-07-19T19:43:35.327344244Z   ^
+2025-07-19T19:43:35.327346714Z 
+2025-07-19T19:43:35.327350174Z Error: Cannot find module '/opt/render/project/src/dist/production-server.js'
+2025-07-19T19:43:35.327353784Z     at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+2025-07-19T19:43:35.327357224Z     at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+2025-07-19T19:43:35.327360274Z     at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+2025-07-19T19:43:35.327367924Z     at Function._load (node:internal/modules/cjs/loader:1211:37)
+2025-07-19T19:43:35.327374374Z     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-19T19:43:35.327378214Z     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+2025-07-19T19:43:35.327382974Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-07-19T19:43:35.327387194Z     at node:internal/main/run_main_module:36:49 {
+2025-07-19T19:43:35.327390445Z   code: 'MODULE_NOT_FOUND',
+2025-07-19T19:43:35.327393495Z   requireStack: []
+2025-07-19T19:43:35.327395975Z }
+2025-07-19T19:43:35.327397945Z 
+2025-07-19T19:43:35.327400005Z Node.js v22.16.0
+2025-07-19T19:43:36.733850489Z ==> Exited with status 1
+2025-07-19T19:43:36.750733017Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+2025-07-19T19:43:41.899278626Z ==> Running 'node dist/production-server.js'
+2025-07-19T19:43:42.011351805Z node:internal/modules/cjs/loader:1404
+2025-07-19T19:43:42.011373196Z   throw err;
+2025-07-19T19:43:42.011376076Z   ^
+2025-07-19T19:43:42.011378736Z 
+2025-07-19T19:43:42.011382256Z Error: Cannot find module '/opt/render/project/src/dist/production-server.js'
+2025-07-19T19:43:42.011385056Z     at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+2025-07-19T19:43:42.011387866Z     at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+2025-07-19T19:43:42.011390266Z     at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+2025-07-19T19:43:42.011393776Z     at Function._load (node:internal/modules/cjs/loader:1211:37)
+2025-07-19T19:43:42.011396156Z     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-19T19:43:42.011398556Z     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+2025-07-19T19:43:42.011401626Z     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2025-07-19T19:43:42.011405847Z     at node:internal/main/run_main_module:36:49 {
+2025-07-19T19:43:42.011409876Z   code: 'MODULE_NOT_FOUND',
+2025-07-19T19:43:42.011413136Z   requireStack: []
+2025-07-19T19:43:42.011415607Z }
+2025-07-19T19:43:42.011417927Z 
+2025-07-19T19:43:42.011420647Z Node.js v22.16.0

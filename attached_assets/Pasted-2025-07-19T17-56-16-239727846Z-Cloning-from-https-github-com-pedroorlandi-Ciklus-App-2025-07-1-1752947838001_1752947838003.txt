@@ -1,0 +1,33 @@
+2025-07-19T17:56:16.239727846Z ==> Cloning from https://github.com/pedroorlandi/Ciklus-App
+2025-07-19T17:56:17.035584289Z ==> Checking out commit ea71cfbb9fdf08ecc32b896ec9bbfe9c220f4a58 in branch main
+2025-07-19T17:56:19.368303089Z ==> Using Node.js version 22.16.0 (default)
+2025-07-19T17:56:19.394727132Z ==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+2025-07-19T17:56:22.256623507Z ==> Using Bun version 1.1.0 (default)
+2025-07-19T17:56:22.256650278Z ==> Docs on specifying a Bun version: https://render.com/docs/bun-version
+2025-07-19T17:56:22.359909702Z ==> Running build command 'npm ci'...
+2025-07-19T17:56:23.010579513Z npm error code EUSAGE
+2025-07-19T17:56:23.010734145Z npm error
+2025-07-19T17:56:23.010742685Z npm error The `npm ci` command can only install with an existing package-lock.json or
+2025-07-19T17:56:23.010747565Z npm error npm-shrinkwrap.json with lockfileVersion >= 1. Run an install with npm@5 or
+2025-07-19T17:56:23.010752335Z npm error later to generate a package-lock.json file, then try again.
+2025-07-19T17:56:23.010756355Z npm error
+2025-07-19T17:56:23.010760436Z npm error Clean install a project
+2025-07-19T17:56:23.010764136Z npm error
+2025-07-19T17:56:23.010767876Z npm error Usage:
+2025-07-19T17:56:23.010771626Z npm error npm ci
+2025-07-19T17:56:23.010775356Z npm error
+2025-07-19T17:56:23.010779606Z npm error Options:
+2025-07-19T17:56:23.010783536Z npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+2025-07-19T17:56:23.010787266Z npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+2025-07-19T17:56:23.010790896Z npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+2025-07-19T17:56:23.010794586Z npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+2025-07-19T17:56:23.010798716Z npm error [--no-bin-links] [--no-fund] [--dry-run]
+2025-07-19T17:56:23.010802416Z npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+2025-07-19T17:56:23.010806416Z npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+2025-07-19T17:56:23.010810196Z npm error
+2025-07-19T17:56:23.010813776Z npm error aliases: clean-install, ic, install-clean, isntall-clean
+2025-07-19T17:56:23.010817476Z npm error
+2025-07-19T17:56:23.010821126Z npm error Run "npm help ci" for more info
+2025-07-19T17:56:23.011614959Z npm error A complete log of this run can be found in: /opt/render/.cache/_logs/2025-07-19T17_56_22_432Z-debug-0.log
+2025-07-19T17:56:23.059506565Z ==> Build failed 😞
+2025-07-19T17:56:23.075441857Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys

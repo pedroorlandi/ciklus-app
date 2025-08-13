@@ -1,0 +1,400 @@
+~/workspace$ # 1. Remover git atual e reinicializar
+rm -rf .git
+git init
+Initialized empty Git repository in /home/runner/workspace/.git/
+~/workspace$ 
+~/workspace$ # 2. Configurar usuário Git
+git config user.email "pedro.orlandi@ciklus.com.br"
+git config user.name "Pedro Orlandi"
+~/workspace$ # 3. Adicionar arquivos
+git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+~/workspace$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+~/workspace$ # 3. Adicionar arquivos (comando completo)
+git add .
+# Se ainda der erro, tente:
+git add --all
+~/workspace$ # 4. Primeiro commit
+git commit -m "Initial commit: CIKLUS APP - Complete financial planning platform"
+On branch main
+nothing to commit, working tree clean
+~/workspace$ # 5. Conectar ao GitHub
+git remote add origin https://github.com/pedroorlandi/ciklus-app.git
+~/workspace$ # 6. Enviar para GitHub
+git push -u origin main
+To https://github.com/pedroorlandi/ciklus-app.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/pedroorlandi/ciklus-app.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+~/workspace$ ~/workspace$ # 1. Remover git atual e reinicializar
+rm -rf .git
+git init
+Initialized empty Git repository in /home/runner/workspace/.git/
+~/workspace$ 
+~/workspace$ # 2. Configurar usuário Git
+git config user.email "pedro.orlandi@ciklus.com.br"
+git config user.name "Pedro Orlandi"
+~/workspace$ # 3. Adicionar arquivos
+git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+~/workspace$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+~/workspace$ # 3. Adicionar arquivos (comando completo)
+git add .
+# Se ainda der erro, tente:
+git add --all
+~/workspace$ # 4. Primeiro commit
+git commit -m "Initial commit: CIKLUS APP - Complete financial planning platform"
+On branch main
+nothing to commit, working tree clean
+~/workspace$ # 5. Conectar ao GitHub
+git remote add origin https://github.com/pedroorlandi/ciklus-app.git
+~/workspace$ # 6. Enviar para GitHub
+git push -u origin main
+To https://github.com/pedroorlandi/ciklus-app.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/pedroorlandi/ciklus-app.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+~/workspace$ # Fazer pull primeiro para sincronizar
+git pull origin main --allow-unrelated-histories
+bash: /home/runner/workspace$: No such file or directory
+Initialized empty Git repository in /home/runner/workspace/.git/
+bash: Initialized: command not found
+bash: /home/runner/workspace$: No such file or directory
+bash: /home/runner/workspace$: No such file or directory
+bash: /home/runner/workspace$: No such file or directory
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+bash: Nothing: command not found
+bash: hint:: command not found
+bash: hint:: command not found
+bash: /home/runner/workspace$: No such file or directory
+bash: Nothing: command not found
+bash: hint:: command not found
+bash: hint:: command not found
+bash: /home/runner/workspace$: No such file or directory
+bash: /home/runner/workspace$: No such file or directory
+[main (root-commit) 3f7cd8a] Initial commit: CIKLUS APP - Complete financial planning platform
+ 252 files changed, 26524 insertions(+)
+ create mode 100644 .github/workflows/auto-deploy.yml
+ create mode 100644 .github/workflows/deploy.yml
+ create mode 100644 .github/workflows/force-deploy.yml
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 SUPABASE_CREDENTIALS_EXTRACT.md
+ create mode 100644 SUPABASE_MIGRATION.sql
+ create mode 100644 UPDATE_FRONTEND_INSTITUCIONAL.md
+ create mode 100644 UPLOAD_INSTRUCTIONS_GITHUB.md
+ create mode 100644 attached_assets/0mCuFuGOnN9T9Ux7ioZdPGcujw.png_1752844934006.webp
+ create mode 100644 attached_assets/APP_Ciklus_2026_1752693348859.xlsx
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-16 a\314\200s 16.35.48_1752694596263.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-16 a\314\200s 19.27.36_1752705233204.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-16 a\314\200s 19.56.36_1752706638345.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-16 a\314\200s 20.04.32_1752707128368.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-16 a\314\200s 21.12.35_1752711188570.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-16 a\314\200s 22.15.17_1752714983976.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-17 a\314\200s 08.19.45_1752751213449.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-17 a\314\200s 08.19.53_1752751213449.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-17 a\314\200s 10.10.03_1752757835650.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-17 a\314\200s 15.30.24_1752777573335.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-18 a\314\200s 14.55.19_1752861456728.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-18 a\314\200s 23.23.08_1752891813351.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-18 a\314\200s 23.41.54_1752892942260.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-18 a\314\200s 23.44.12_1752893061845.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 07.04.35_1752919535698.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 12.10.58_1752937888276.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 12.36.11_1752939380420.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 12.37.38_1752939467036.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 12.39.04_1752939556869.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 12.59.51_1752940802289.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 13.06.44_1752941215819.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 13.17.29_1752941868101.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 14.38.50_1752946744705.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 14.42.20_1752946955240.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 16.10.49_1752952259956.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 16.14.29_1752952488034.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 16.50.27_1752954642536.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 16.51.10_1752954683071.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 17.30.33_1752957053807.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 17.50.13_1752958223291.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 17.58.01_1752958708915.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 18.02.58_1752958989875.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-19 a\314\200s 18.29.00_1752960556645.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 01.10.09_1752984653570.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 01.15.14_1752984945499.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 02.04.34_1752987889607.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 12.50.42_1753026656675.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 13.34.53_1753029315077.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 14.59.12_1753034390219.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 15.30.01_1753036313476.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 15.30.50_1753036313476.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 21.09.23_1753056582694.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 21.31.28_1753057905458.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 21.45.42_1753058777527.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 22.17.35_1753060664573.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 22.40.26_1753062047231.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 22.44.37_1753062288208.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-20 a\314\200s 23.41.12_1753065682577.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-21 a\314\200s 00.00.23_1753066834961.png"
+ create mode 100644 "attached_assets/Captura de Tela 2025-07-21 a\314\200s 00.11.42_1753067512434.png"
+ create mode 100644 attached_assets/DADOS_1752873750059.csv
+ create mode 100644 attached_assets/Pasted--svg-id-final-svg-viewBox-198-37149047851562-459-08795166015625-605-7389526367188-158-99462890625-1752760563851_1752760563851.txt
+ create mode 100644 attached_assets/Pasted--svg-id-final-svg-viewBox-198-37149047851562-459-08795166015625-605-7389526367188-158-99462890625-1752761040166_1752761040167.txt
+ create mode 100644 attached_assets/Pasted-2025-07-19T17-50-29-197633989Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-1-1752947707623_1752947707625.txt
+ create mode 100644 attached_assets/Pasted-2025-07-19T17-56-16-239727846Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-1-1752947838001_1752947838003.txt
+ create mode 100644 attached_assets/Pasted-2025-07-19T17-58-09-179820523Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-1-1752948010373_1752948010374.txt
+ create mode 100644 attached_assets/Pasted-2025-07-19T18-01-42-158881911Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-1-1752948285633_1752948285634.txt
+ create mode 100644 attached_assets/Pasted-2025-07-19T18-06-43-616575749Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-1-1752948459294_1752948459295.txt
+ create mode 100644 attached_assets/Pasted-2025-07-19T19-43-12-115286575Z-Using-Node-js-version-22-16-0-default-2025-07-19T19-43-12-14081-1752954505160_1752954505161.txt
+ create mode 100644 attached_assets/Pasted-2025-07-19T19-55-36-871077221Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-1-1752955002483_1752955002483.txt
+ create mode 100644 attached_assets/Pasted-2025-07-19T20-01-54-020026347Z-Using-Node-js-version-22-16-0-default-2025-07-19T20-01-54-04913-1752955374051_1752955374053.txt
+ create mode 100644 attached_assets/Pasted-2025-07-19T20-06-12-981932537Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-1-1752955679560_1752955679561.txt
+ create mode 100644 attached_assets/Pasted-2025-07-19T20-12-37-202201439Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-1-1752956012169_1752956012170.txt
+ create mode 100644 attached_assets/Pasted-2025-07-19T20-30-19-298513706Z-Using-Node-js-version-22-16-0-default-2025-07-19T20-30-19-32396-1752957199525_1752957199526.txt
+ create mode 100644 attached_assets/Pasted-2025-07-19T20-38-00-766153788Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-1-1752957628928_1752957628930.txt
+ create mode 100644 attached_assets/Pasted-2025-07-20T03-58-44-107653729Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-2-1752984167875_1752984167876.txt
+ create mode 100644 attached_assets/Pasted-2025-07-20T04-38-29-421130496Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-2-1752986419520_1752986419522.txt
+ create mode 100644 attached_assets/Pasted-2025-07-20T18-26-24-255223434Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-2-1753036143573_1753036143574.txt
+ create mode 100644 attached_assets/Pasted-2025-07-20T18-41-46-338779036Z-Using-Bun-version-1-1-0-default-2025-07-20T18-41-46-338800957Z--1753037540677_1753037540679.txt
+ create mode 100644 attached_assets/Pasted-2025-07-20T19-31-59-382645905Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-2-1753040164272_1753040164274.txt
+ create mode 100644 attached_assets/Pasted-2025-07-20T20-49-47-678149441Z-up-to-date-audited-399-packages-in-15s-2025-07-20T20-49-47-678160701-1753049435700_1753049435701.txt
+ create mode 100644 attached_assets/Pasted-2025-07-20T22-12-36-666712262Z-up-to-date-audited-399-packages-in-12s-2025-07-20T22-12-36-666766693-1753049609878_1753049609880.txt
+ create mode 100644 attached_assets/Pasted-2025-07-20T22-17-20-852222929Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-2-1753049949484_1753049949486.txt
+ create mode 100644 attached_assets/Pasted-2025-07-20T22-24-39-638165904Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-2-1753050597742_1753050597742.txt
+ create mode 100644 attached_assets/Pasted-2025-07-20T23-27-02-99189819Z-2025-07-20T23-27-02-991908291Z-58-packages-are-looking-for-funding-20-1753054241331_1753054241331.txt
+ create mode 100644 attached_assets/Pasted-2025-07-21T00-28-02-986210134Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-2-1753057833988_1753057833989.txt
+ create mode 100644 attached_assets/Pasted-2025-07-21T00-41-42-565270924Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-2-1753059082465_1753059082466.txt
+ create mode 100644 attached_assets/Pasted-2025-07-21T01-01-39-263346182Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-2-1753059812951_1753059812953.txt
+ create mode 100644 attached_assets/Pasted-2025-07-21T01-10-17-664544158Z-Cloning-from-https-github-com-pedroorlandi-Ciklus-App-2025-07-2-1753060373232_1753060373233.txt
+ create mode 100644 attached_assets/brand-guidelines_1752693003652.pdf
+ create mode 100644 attached_assets/c11eb372-82af-4a16-8a4a-1618dcd39801_1752844410133.png
+ create mode 100644 attached_assets/cfp-o-que-e_9f39552b-7912-41d7-85ab-356c743249ec.png_1752844934006.webp
+ create mode 100644 attached_assets/color_logo_transparent_1752762036069.png
+ create mode 100644 attached_assets/image_1752762590249.png
+ create mode 100644 attached_assets/logo_cvm_1752844934006.png
+ create mode 100644 attached_assets/vector-file_1752693283185.eps
+ create mode 100644 ciklus-clean/README.md
+ create mode 100644 ciklus-clean/package.json
+ create mode 100644 ciklus-clean/public/assets/0mCuFuGOnN9T9Ux7ioZdPGcujw.png_1752844934006-VJUb4WIj.webp
+ create mode 100644 ciklus-clean/public/assets/c11eb372-82af-4a16-8a4a-1618dcd39801_1752844410133-4CUut7c2.png
+ create mode 100644 ciklus-clean/public/assets/cfp-o-que-e_9f39552b-7912-41d7-85ab-356c743249ec.png_1752844934006-PVLqR-EP.webp
+ create mode 100644 ciklus-clean/public/assets/color_logo_transparent_1752762036069-QCcm_Ywk.png
+ create mode 100644 ciklus-clean/public/assets/index-DEDulYWY.css
+ create mode 100644 ciklus-clean/public/assets/index-DwBefPJn.js
+ create mode 100644 ciklus-clean/public/assets/logo_cvm_1752844934006-D2OKQoeH.png
+ create mode 100644 ciklus-clean/public/index.html
+ create mode 100644 ciklus-clean/render.yaml
+ create mode 100644 ciklus-clean/server.cjs
+ create mode 100644 client/index.html
+ create mode 100644 client/src/App.tsx
+ create mode 100644 client/src/assets/ciklus-logo.png
+ create mode 100644 client/src/assets/ciklus-logo.svg
+ create mode 100644 client/src/components/dados/analise-avancada.tsx
+ create mode 100644 client/src/components/dados/grafico-ciclo-vida.tsx
+ create mode 100644 client/src/components/dashboard/economic-indicators.tsx
+ create mode 100644 client/src/components/dashboard/family-members.tsx
+ create mode 100644 client/src/components/dashboard/financial-chart.tsx
+ create mode 100644 client/src/components/dashboard/kpi-cards.tsx
+ create mode 100644 client/src/components/dashboard/mood-insights.tsx
+ create mode 100644 client/src/components/dashboard/portfolio-overview.tsx
+ create mode 100644 client/src/components/dashboard/projacoes-futuras.tsx
+ create mode 100644 client/src/components/dashboard/recent-goals.tsx
+ create mode 100644 client/src/components/dashboard/recent-transactions.tsx
+ create mode 100644 client/src/components/institutional/AboutSection.tsx
+ create mode 100644 client/src/components/institutional/ArticlesSection.tsx
+ create mode 100644 client/src/components/institutional/ContactSection.tsx
+ create mode 100644 client/src/components/institutional/CredentialsSection.tsx
+ create mode 100644 client/src/components/institutional/CtaSection.tsx
+ create mode 100644 client/src/components/institutional/Footer.tsx
+ create mode 100644 client/src/components/institutional/Header.tsx
+ create mode 100644 client/src/components/institutional/HeroSection.tsx
+ create mode 100644 client/src/components/institutional/Logo.tsx
+ create mode 100644 client/src/components/institutional/MobileMenu.tsx
+ create mode 100644 client/src/components/institutional/Navigation.tsx
+ create mode 100644 client/src/components/institutional/PhilosophySection.tsx
+ create mode 100644 client/src/components/institutional/PillarsSection.tsx
+ create mode 100644 client/src/components/institutional/SchedulingModal.tsx
+ create mode 100644 client/src/components/institutional/ScrollReveal.tsx
+ create mode 100644 client/src/components/institutional/ServicesSection.tsx
+ create mode 100644 client/src/components/institutional/StatsSection.tsx
+ create mode 100644 client/src/components/institutional/TeamSection.tsx
+ create mode 100644 client/src/components/institutional/hooks/useHeaderScroll.ts
+ create mode 100644 client/src/components/layout/header.tsx
+ create mode 100644 client/src/components/layout/planejamento-selector.tsx
+ create mode 100644 client/src/components/layout/sidebar.tsx
+ create mode 100644 client/src/components/layout/view-toggle.tsx
+ create mode 100644 client/src/components/ui/accordion.tsx
+ create mode 100644 client/src/components/ui/alert-dialog.tsx
+ create mode 100644 client/src/components/ui/alert.tsx
+ create mode 100644 client/src/components/ui/aspect-ratio.tsx
+ create mode 100644 client/src/components/ui/avatar.tsx
+ create mode 100644 client/src/components/ui/badge.tsx
+ create mode 100644 client/src/components/ui/breadcrumb.tsx
+ create mode 100644 client/src/components/ui/button.tsx
+ create mode 100644 client/src/components/ui/calendar.tsx
+ create mode 100644 client/src/components/ui/card.tsx
+ create mode 100644 client/src/components/ui/carousel.tsx
+ create mode 100644 client/src/components/ui/chart.tsx
+ create mode 100644 client/src/components/ui/checkbox.tsx
+ create mode 100644 client/src/components/ui/collapsible.tsx
+ create mode 100644 client/src/components/ui/command.tsx
+ create mode 100644 client/src/components/ui/context-menu.tsx
+ create mode 100644 client/src/components/ui/data-table.tsx
+ create mode 100644 client/src/components/ui/dialog.tsx
+ create mode 100644 client/src/components/ui/drawer.tsx
+ create mode 100644 client/src/components/ui/dropdown-menu.tsx
+ create mode 100644 client/src/components/ui/editable-data-table-generic.tsx
+ create mode 100644 client/src/components/ui/editable-data-table.tsx
+ create mode 100644 client/src/components/ui/form.tsx
+ create mode 100644 client/src/components/ui/hover-card.tsx
+ create mode 100644 client/src/components/ui/input-otp.tsx
+ create mode 100644 client/src/components/ui/input.tsx
+ create mode 100644 client/src/components/ui/label.tsx
+ create mode 100644 client/src/components/ui/menubar.tsx
+ create mode 100644 client/src/components/ui/navigation-menu.tsx
+ create mode 100644 client/src/components/ui/pagination.tsx
+ create mode 100644 client/src/components/ui/popover.tsx
+ create mode 100644 client/src/components/ui/progress.tsx
+ create mode 100644 client/src/components/ui/radio-group.tsx
+ create mode 100644 client/src/components/ui/resizable.tsx
+ create mode 100644 client/src/components/ui/scroll-area.tsx
+ create mode 100644 client/src/components/ui/select.tsx
+ create mode 100644 client/src/components/ui/separator.tsx
+ create mode 100644 client/src/components/ui/sheet.tsx
+ create mode 100644 client/src/components/ui/sidebar.tsx
+ create mode 100644 client/src/components/ui/skeleton.tsx
+ create mode 100644 client/src/components/ui/slider.tsx
+ create mode 100644 client/src/components/ui/switch.tsx
+ create mode 100644 client/src/components/ui/table.tsx
+ create mode 100644 client/src/components/ui/tabs.tsx
+ create mode 100644 client/src/components/ui/textarea.tsx
+ create mode 100644 client/src/components/ui/toast.tsx
+ create mode 100644 client/src/components/ui/toaster.tsx
+ create mode 100644 client/src/components/ui/toggle-group.tsx
+ create mode 100644 client/src/components/ui/toggle.tsx
+ create mode 100644 client/src/components/ui/tooltip.tsx
+ create mode 100644 client/src/hooks/use-mobile.tsx
+ create mode 100644 client/src/hooks/use-toast.ts
+ create mode 100644 client/src/hooks/useAuth.ts
+ create mode 100644 client/src/hooks/usePlanejamentoContext.ts
+ create mode 100644 client/src/index.css
+ create mode 100644 client/src/lib/authUtils.ts
+ create mode 100644 client/src/lib/queryClient.ts
+ create mode 100644 client/src/lib/utils.ts
+ create mode 100644 client/src/main.tsx
+ create mode 100644 client/src/pages/InstitutionalLanding.tsx
+ create mode 100644 client/src/pages/admin.tsx
+ create mode 100644 client/src/pages/dados.tsx
+ create mode 100644 client/src/pages/dashboard.tsx
+ create mode 100644 client/src/pages/despesas.tsx
+ create mode 100644 client/src/pages/imoveis.tsx
+ create mode 100644 client/src/pages/indices.tsx
+ create mode 100644 client/src/pages/landing.tsx
+ create mode 100644 client/src/pages/membros.tsx
+ create mode 100644 client/src/pages/not-found.tsx
+ create mode 100644 client/src/pages/objetivos.tsx
+ create mode 100644 client/src/pages/planejamento-details.tsx
+ create mode 100644 client/src/pages/planejamentos.tsx
+ create mode 100644 client/src/pages/portfolio.tsx
+ create mode 100644 client/src/pages/receitas.tsx
+ create mode 100644 client/src/pages/simulacoes.tsx
+ create mode 100644 components.json
+ create mode 100644 drizzle.config.ts
+ create mode 100644 layout_correto_mockup.html
+ create mode 100644 package.json
+ create mode 100644 postcss.config.js
+ create mode 100644 public/assets/0mCuFuGOnN9T9Ux7ioZdPGcujw.png_1752844934006-VJUb4WIj.webp
+ create mode 100644 public/assets/c11eb372-82af-4a16-8a4a-1618dcd39801_1752844410133-4CUut7c2.png
+ create mode 100644 public/assets/cfp-o-que-e_9f39552b-7912-41d7-85ab-356c743249ec.png_1752844934006-PVLqR-EP.webp
+ create mode 100644 public/assets/ciklus-logo-CyETiAgk.png
+ create mode 100644 public/assets/color_logo_transparent_1752762036069-QCcm_Ywk.png
+ create mode 100644 public/assets/index-D99CTFWF.css
+ create mode 100644 public/assets/index-DzLvYZF-.js
+ create mode 100644 public/assets/logo_cvm_1752844934006-D2OKQoeH.png
+ create mode 100644 public/index.html
+ create mode 100644 replit.md
+ create mode 100644 server/db.ts
+ create mode 100644 server/index.ts
+ create mode 100644 server/middleware/permissions.ts
+ create mode 100644 server/moodAnalyzer.ts
+ create mode 100644 server/production.ts
+ create mode 100644 server/replitAuth.ts
+ create mode 100644 server/routes.ts
+ create mode 100644 server/storage.ts
+ create mode 100644 server/utils/dateUtils.ts
+ create mode 100644 server/vite.ts
+ create mode 100644 shared/constants.ts
+ create mode 100644 shared/schema.ts
+ create mode 100644 tailwind.config.ts
+ create mode 100644 tsconfig.json
+ create mode 100644 vite.config.ts
+bash: On: command not found
+bash: nothing: command not found
+bash: /home/runner/workspace$: No such file or directory
+bash: /home/runner/workspace$: No such file or directory
+To https://github.com/pedroorlandi/ciklus-app.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/pedroorlandi/ciklus-app.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+bash: To: command not found
+bash: syntax error near unexpected token `('
+bash: error:: command not found
+bash: hint:: command not found
+bash: hint:: command not found
+bash: hint:: command not found
+bash: hint:: command not found
+bash: hint:: command not found
+bash: /home/runner/workspace$: No such file or directory
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 2.55 KiB | 2.55 MiB/s, done.
+From https://github.com/pedroorlandi/ciklus-app
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+~/workspace$ # Depois enviar
+git push -u origin main
+To https://github.com/pedroorlandi/ciklus-app.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/pedroorlandi/ciklus-app.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+~/workspace$ 
