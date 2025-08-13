@@ -27,25 +27,16 @@ export const sessions = pgTable(
   (table) => [index("IDX_session_expire").on(table.expire)],
 );
 
-// User storage table - Enhanced for independent authentication
+// User storage table.
+// (IMPORTANT) This table is mandatory for Replit Auth, don't drop it.
 export const users = pgTable("users", {
   id: varchar("id").primaryKey().notNull(),
-  email: varchar("email").unique().notNull(),
-  passwordHash: varchar("password_hash"), // For independent auth
+  email: varchar("email").unique(),
   firstName: varchar("first_name"),
   lastName: varchar("last_name"),
   profileImageUrl: varchar("profile_image_url"),
   role: varchar("role").notNull().default("cliente"), // administrador, planejador, cliente
-  permissions: jsonb("permissions").default("{}"), // Fine-grained permissions
   status: varchar("status").notNull().default("ativo"), // ativo, inativo, suspenso
-  emailVerified: boolean("email_verified").default(false),
-  emailVerificationToken: varchar("email_verification_token"),
-  passwordResetToken: varchar("password_reset_token"),
-  passwordResetExpires: timestamp("password_reset_expires"),
-  lastLogin: timestamp("last_login"),
-  loginAttempts: integer("login_attempts").default(0),
-  lockedUntil: timestamp("locked_until"),
-  authProvider: varchar("auth_provider").default("local"), // local, replit (for backward compatibility)
   createdAt: timestamp("created_at").defaultNow(),
   updatedAt: timestamp("updated_at").defaultNow(),
 });
