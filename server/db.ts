@@ -9,25 +9,20 @@ if (!process.env.DATABASE_URL) {
   );
 }
 
-// PRODUCTION CONFIGURATION: Using ONLY Supabase as database
-// Local PostgreSQL no longer used - Supabase is the single source of truth
-const supabasePostgresUrl = "postgresql://postgres:BxSG17co65i7xAzm@db.xjaoydofavoyuxosqaua.supabase.co:5432/postgres";
+// PRODUCTION CONFIGURATION: Using Supabase as database
+// Check if DATABASE_URL is already pointing to Supabase
+const isSupabaseUrl = process.env.DATABASE_URL?.includes('supabase.co') || 
+                      process.env.DATABASE_URL?.includes('amazonaws.com');
 
-// Primary connection to Supabase (REST API fallback if direct connection fails)
-if (process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_KEY) {
-  console.log('[DB] ✅ SUPABASE ONLY - Production database configured');
+if (isSupabaseUrl) {
+  console.log('[DB] ✅ SUPABASE DETECTED - Using DATABASE_URL Supabase connection');
   console.log('[DB] 🚀 Architecture: Supabase → GitHub → Replit');
-  // Try Supabase direct connection first
-  let connectionString = supabasePostgresUrl;
 } else {
-  console.log('[DB] ⚠️ Supabase credentials not found - using local PostgreSQL temporarily');
-  console.log('[DB] 📋 Configure SUPABASE_URL and SUPABASE_SERVICE_KEY to use production database');
+  console.log('[DB] 📋 Using local PostgreSQL - DATABASE_URL configured');
 }
 
-// Use Supabase PostgreSQL URL when available, otherwise fallback to local
-let connectionString = (process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_KEY) 
-  ? supabasePostgresUrl 
-  : process.env.DATABASE_URL;
+// Use the configured DATABASE_URL directly
+const connectionString = process.env.DATABASE_URL;
 
 export const pool = new Pool({ 
   connectionString,
