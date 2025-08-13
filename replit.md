@@ -27,6 +27,7 @@ CIKLUS APP is a comprehensive full-stack web application designed for family fin
 ✓ **Backup System Created**: Implemented automated backup strategy with daily scripts and GitHub sync capabilities
 ✓ **Emergency Recovery System**: Complete backup system ensuring zero rework in case of Repl issues (15-30 min recovery)
 ✓ **GitHub Cleanup Completed**: Repository cleaned and updated with organized commit history (August 13, 2025)
+✓ **Backup System Enhanced**: Intelligent backup with automatic cleanup integrated for daily use without maintenance
 
 ### Database Architecture Decision
 - **Primary Database**: Supabase PostgreSQL (production-ready, robust)
@@ -38,6 +39,30 @@ CIKLUS APP is a comprehensive full-stack web application designed for family fin
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+
+## Backup Commands
+
+### Primary Backup Command (Daily Use):
+```bash
+bash scripts/backup-inteligente.sh
+```
+**Features:**
+- Complete protection against rework (15-30 minute recovery)
+- Automatic cleanup of old backups (keeps only recent ones)
+- Local backup + GitHub sync in one command
+- Optimized size (excludes node_modules/attached_assets)
+- Includes database dump + configurations + recovery instructions
+
+### Alternative Backup Commands:
+```bash
+# GitHub only (with enhanced protection)
+bash scripts/backup-github-automatico.sh
+
+# Emergency complete backup (for milestones)
+bash scripts/backup-completo-emergencia.sh
+```
+
+**Recommendation:** Use backup-inteligente.sh daily or before major changes.
 
 ### User Information
 - **GitHub Username**: pedroorlandi
