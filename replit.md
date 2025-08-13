@@ -31,10 +31,12 @@ CIKLUS APP is a comprehensive full-stack web application designed for family fin
 
 ### Database Architecture Decision
 - **Primary Database**: Neon PostgreSQL (production-ready, robust) - `ep-sparkling-leaf-af0jhs8y`
-- **Supabase Project**: `xjaoydofavoyuxosqaua` (configured but not storing data)
+- **Database Origin**: Automatically created by Replit (not user-controlled)
+- **Supabase Project**: `xjaoydofavoyuxosqaua` (manually configured but not storing data)
 - **Data Storage**: 1,704 historical records successfully stored in Neon
 - **Current Status**: System operational with all data in Neon backend
 - **Architecture Pattern**: Neon PostgreSQL → GitHub backup → Replit development
+- **Issue Identified**: Replit auto-creates external resources without user consent
 
 ## User Preferences
 
