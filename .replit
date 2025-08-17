@@ -6,7 +6,8 @@ packages = ["glibcLocales", "unzip"]
 
 [deployment]
 deploymentTarget = "autoscale"
-run = ["streamlit", "run", "app.py", "--server.port", "5000"]
+run = ["sh", "-c", "npm run start"]
+build = ["sh", "-c", "npm run build"]
 
 [workflows]
 runButton = "Project"
