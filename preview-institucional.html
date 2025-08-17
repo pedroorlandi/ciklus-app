@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIKLUS - Site Institucional (Preview Local)</title>
+  <style>
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    }
+    .preview-header {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .status {
+      background: #fef3c7;
+      border: 1px solid #f59e0b;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .site-frame {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      height: 80vh;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .purple { color: #27156B; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="preview-header">
+    <h1 style="margin:0; color: #27156B;">🔍 CIKLUS - Site Institucional (Preview)</h1>
+    <p style="margin: 10px 0 0 0; color: #6b7280;">Visualização da versão local que ainda não foi deployada</p>
+  </div>
+
+  <div class="status">
+    <strong>⚠️ Status:</strong> Esta versão está <strong>compilada localmente</strong> mas ainda não foi sincronizada com <strong>www.ciklus.com.br</strong>
+  </div>
+
+  <div class="info">
+    <div class="card">
+      <h3 style="margin-top:0; color: #27156B;">📂 Versão Local</h3>
+      <p><strong>Build:</strong> 13 de agosto 2025</p>
+      <p><strong>Assets:</strong> 323KB JS + 4KB CSS</p>
+      <p><strong>Seções:</strong> Header, Hero, About, Services, Team, Credentials, Articles, Contact, Footer</p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0; color: #27156B;">🌐 Para Deploy</h3>
+      <p><strong>Destino:</strong> www.ciklus.com.br</p>
+      <p><strong>Processo:</strong> Upload GitHub → Auto-deploy Render</p>
+      <p><strong>Status:</strong> <span style="color: #f59e0b;">Aguardando sincronização</span></p>
+    </div>
+  </div>
+
+  <div class="site-frame">
+    <div style="padding: 40px; text-align: center; color: #6b7280;">
+      <h2 style="color: #27156B;">Site Institucional Compilado</h2>
+      <p>Conteúdo completo incluindo:</p>
+      <ul style="text-align: left; max-width: 400px; margin: 0 auto;">
+        <li><strong>Life Centered Financial Planning</strong> - Metodologia principal</li>
+        <li><strong>Return On Life (ROL)</strong> - Filosofia da empresa</li>
+        <li><strong>Certificação CFP®</strong> - Credenciais profissionais</li>
+        <li><strong>Logos CVM/PLANEJAR</strong> - Regulamentação</li>
+        <li><strong>Pilares do Planejamento</strong> - 6 áreas integradas</li>
+        <li><strong>Equipe e Contatos</strong> - Informações completas</li>
+      </ul>
+      <div style="margin-top: 30px; padding: 20px; background: #f8fafc; border-radius: 8px;">
+        <p><strong>Arquivos Compilados:</strong></p>
+        <p style="font-family: monospace; font-size: 12px;">
+          📁 ciklus-clean/public/<br>
+          ├── index.html<br>
+          └── assets/<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;├── index-DwBefPJn.js (323KB)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;├── index-DEDulYWY.css (4KB)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;└── [imagens e logos]
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 8px;">
+    <h3 style="margin-top: 0; color: #27156B;">📋 Como Sincronizar com Produção</h3>
+    <ol style="color: #374151;">
+      <li>Upload da pasta <code>ciklus-clean/public/</code> para GitHub</li>
+      <li>Deploy automático via Render.com (2-3 minutos)</li>
+      <li>Site atualizado em www.ciklus.com.br</li>
+    </ol>
+  </div>
+</body>
+</html>
