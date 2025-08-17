@@ -6,13 +6,34 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// Middleware para separação de domínios
+app.use((req, res, next) => {
+  const host = req.get('host') || '';
+  const path = req.path;
+
+  console.log(`[DEBUG] ${req.method} ${path} (Host: ${host})`);
+
+  // Site institucional: ciklus.com.br ou www.ciklus.com.br
+  if (host === 'ciklus.com.br' || host === 'www.ciklus.com.br') {
+    // Servir apenas arquivos estáticos do site institucional
+    return express.static('./site-atual')(req, res, next);
+  }
+
+  // Para outros domínios (app.ciklus.com.br ou desenvolvimento), continua o fluxo normal
+  next();
+});
+
+// Middleware de logging para app.ciklus.com.br
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
+  const host = req.get('host') || '';
   let capturedJsonResponse: Record<string, any> | undefined = undefined;
 
-  // DEBUG: Log ALL requests to identify routing issues
-  console.log(`[DEBUG] ${req.method} ${path} (Host: ${req.get('host')})`);
+  // Skip logging para requests do site institucional
+  if (host === 'ciklus.com.br' || host === 'www.ciklus.com.br') {
+    return next();
+  }
 
   const originalResJson = res.json;
   res.json = function (bodyJson, ...args) {

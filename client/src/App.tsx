@@ -51,7 +51,7 @@ function Router() {
     <Routes>
       <Route 
         path="/" 
-        element={<Dashboard />} 
+        element={isAuthenticated ? <Dashboard /> : <Login />} 
       />
       <Route path="/institucional" element={<InstitutionalLanding />} />
       <Route path="/login" element={<Login />} />
