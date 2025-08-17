@@ -22,7 +22,7 @@ args = "Ciklus Backend"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Preview Institucional"
+args = "Site Institucional Atual"
 
 [[workflows.workflow]]
 name = "Ciklus Backend"
@@ -37,13 +37,13 @@ waitForPort = 5000
 outputType = "webview"
 
 [[workflows.workflow]]
-name = "Preview Institucional"
+name = "Site Institucional Atual"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd ciklus-clean/public && python3 -m http.server 8080"
-waitForPort = 8080
+args = "cd dist/public && python3 -m http.server 3030"
+waitForPort = 3030
 
 [workflows.workflow.metadata]
 outputType = "webview"
