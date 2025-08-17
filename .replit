@@ -2,7 +2,7 @@ modules = ["python-3.11", "nodejs-20", "postgresql-16"]
 
 [nix]
 channel = "stable-25_05"
-packages = ["glibcLocales"]
+packages = ["glibcLocales", "unzip"]
 
 [deployment]
 deploymentTarget = "autoscale"
@@ -22,7 +22,7 @@ args = "Ciklus Backend"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Site Institucional Atual"
+args = "Site Atual Deployado"
 
 [[workflows.workflow]]
 name = "Ciklus Backend"
@@ -37,13 +37,13 @@ waitForPort = 5000
 outputType = "webview"
 
 [[workflows.workflow]]
-name = "Site Institucional Atual"
+name = "Site Atual Deployado"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd dist/public && python3 -m http.server 3030"
-waitForPort = 3030
+args = "cd site-atual && python3 -m http.server 8080"
+waitForPort = 8080
 
 [workflows.workflow.metadata]
 outputType = "webview"
