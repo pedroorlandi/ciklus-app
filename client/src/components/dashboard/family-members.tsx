@@ -52,7 +52,7 @@ export default function FamilyMembers({ planejamentoId }: FamilyMembersProps) {
           <p>Selecione um planejamento</p>
           <p className="text-sm">para ver os membros da família</p>
         </div>
-      ) : membros.length === 0 ? (
+      ) : (!membros || !Array.isArray(membros) || membros.length === 0) ? (
         <div className="text-center py-8 text-gray-500">
           <Users className="h-12 w-12 mx-auto mb-4" />
           <p>Nenhum membro cadastrado</p>
@@ -60,7 +60,7 @@ export default function FamilyMembers({ planejamentoId }: FamilyMembersProps) {
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {membros.map((membro: any) => (
+          {Array.isArray(membros) && membros.map((membro: any) => (
             <div key={membro.id} className="bg-gray-50 p-4 rounded-lg">
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">

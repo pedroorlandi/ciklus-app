@@ -69,7 +69,7 @@ export const canAccessPlanejamento: RequestHandler = async (req: any, res, next)
       return next();
     }
 
-    const planejamento = await storage.getPlanejamentoById(parseInt(planejamentoId));
+    const planejamento = await storage.getPlanejamento(parseInt(planejamentoId), userId, user.role);
     if (!planejamento) {
       return res.status(404).json({ message: "Planejamento não encontrado" });
     }

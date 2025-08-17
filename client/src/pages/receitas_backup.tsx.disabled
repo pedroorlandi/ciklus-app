@@ -130,35 +130,9 @@ export default function Receitas() {
         variant: "destructive",
       });
     }
-  ];
-
-  // Função para salvamento em massa
-  const handleBulkSave = async (updatedData: any[]) => {
-    const updates = updatedData.map(item => 
-      updateMutation.mutateAsync({
-        id: item.id,
-        data: {
-          ...item,
-          valor: String(item.valor || "0"),
-          planejamentoId: selectedPlanejamento
-        }
-      })
-    );
-    
-    try {
-      await Promise.all(updates);
-      toast({
-        title: "Sucesso",
-        description: "Receitas atualizadas com sucesso!",
-      });
-    } catch (error) {
-      toast({
-        title: "Erro",
-        description: "Erro ao atualizar as receitas.",
-        variant: "destructive",
-      });
-    }
   };
+
+
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),

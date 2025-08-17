@@ -46,7 +46,7 @@ export default function EconomicIndicators() {
     { nome: "USD_BRL", valor: "5.12", tipo: "cambio", unidade: "R$", change: "-0.03%" },
   ];
 
-  const displayIndices = indices?.length ? indices : defaultIndices;
+  const displayIndices = (indices && Array.isArray(indices) && indices.length > 0) ? indices : defaultIndices;
 
   return (
     <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
