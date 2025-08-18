@@ -4,7 +4,7 @@ import ciklusLogo from "@assets/color_logo_transparent_1752762036069.png";
 
 export default function HeroSection() {
   const handleLoginClick = () => {
-    window.location.href = '/api/login';
+    window.location.href = 'https://app.ciklus.com.br';
   };
 
   const scrollToSection = (sectionId: string) => {

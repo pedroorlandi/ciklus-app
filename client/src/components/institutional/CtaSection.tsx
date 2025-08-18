@@ -34,7 +34,7 @@ const CtaSection = () => {
               size="lg"
               variant="outline"
               className="font-medium text-lg px-8 py-4 text-white border-white hover:bg-white hover:text-business-800"
-              onClick={() => window.location.href = '/home'}
+              onClick={() => window.location.href = 'https://app.ciklus.com.br'}
             >
               Entrar no Sistema
             </Button>

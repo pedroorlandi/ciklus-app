@@ -10,7 +10,7 @@ export default function Footer() {
   };
 
   const handleLoginClick = () => {
-    window.location.href = '/api/login';
+    window.location.href = 'https://app.ciklus.com.br';
   };
 
   return (

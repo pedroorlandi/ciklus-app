@@ -26,18 +26,8 @@ export default function Header() {
     }
   };
 
-  const handleLoginClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    console.log('=== LOGIN BUTTON CLICKED ===');
-    console.log('Navigating to /login using React Router...');
-    
-    // Use React Router navigate
-    navigate('/login');
-    
-    setTimeout(() => {
-      console.log('After navigation, location is:', window.location.pathname);
-    }, 100);
+  const handleLoginClick = () => {
+    window.location.href = 'https://app.ciklus.com.br';
   };
 
   return (
