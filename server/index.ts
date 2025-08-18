@@ -15,8 +15,16 @@ app.use((req, res, next) => {
 
   // Site institucional: ciklus.com.br ou www.ciklus.com.br
   if (host === 'ciklus.com.br' || host === 'www.ciklus.com.br') {
-    // Servir apenas arquivos estáticos do site institucional
-    return express.static('./site-atual')(req, res, next);
+    // Servir arquivos estáticos primeiro (CSS, JS, imagens)
+    const staticMiddleware = express.static('./site-atual');
+    return staticMiddleware(req, res, (staticErr) => {
+      // Se não encontrou arquivo estático, servir o site institucional estático
+      if (staticErr || req.method === 'GET') {
+        // Servir página institucional pura em HTML sem React
+        return res.sendFile('index.html', { root: './site-institucional' });
+      }
+      next();
+    });
   }
 
   // Para outros domínios (app.ciklus.com.br ou desenvolvimento), continua o fluxo normal
