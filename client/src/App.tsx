@@ -35,9 +35,10 @@ function Router() {
   const currentHost = window.location.hostname;
   const isInstitutionalDomain = currentHost === 'ciklus.com.br' || currentHost === 'www.ciklus.com.br';
   
-  // Simple test to see if routing works
+  // Debug mais detalhado
   console.log('CURRENT ROUTE:', location.pathname);
   console.log('CURRENT DOMAIN:', currentHost);
+  console.log('IS INSTITUTIONAL:', isInstitutionalDomain);
 
   // Se for domínio institucional ou rota /institucional, mostrar apenas o site institucional
   if (isInstitutionalDomain || location.pathname === '/institucional') {

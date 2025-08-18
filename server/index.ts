@@ -11,12 +11,14 @@ app.use((req, res, next) => {
   const host = req.get('host') || '';
   const path = req.path;
 
-  console.log(`[DEBUG] ${req.method} ${path} (Host: ${host})`);
+  console.log(`[DOMAIN] ${req.method} ${path} (Host: ${host})`);
 
   // Site institucional: ciklus.com.br ou www.ciklus.com.br
   if (host === 'ciklus.com.br' || host === 'www.ciklus.com.br') {
+    console.log(`[DOMAIN] Redirecting institutional domain ${host} to /institucional`);
     // Para domínios institucionais, forçar rota "/institucional" do React
     req.url = '/institucional';
+    console.log(`[DOMAIN] URL changed to: ${req.url}`);
   }
 
   // Para outros domínios (app.ciklus.com.br ou desenvolvimento), continua o fluxo normal
