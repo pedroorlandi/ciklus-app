@@ -67,18 +67,28 @@ Preferred communication style: Simple, everyday language.
 bash scripts/backup-simples-robusto.sh
 ```
 **Features:**
-- Complete protection against rework (15-30 minute recovery)
+- Local backup only (ephemeral protection)
 - Automatic cleanup of old backups (keeps only recent ones)
 - Works even with PostgreSQL version mismatch and Git restrictions
 - Optimized size (excludes node_modules/attached_assets)
 - Includes database info + configurations + detailed recovery instructions
 - Prepares GitHub sync info for manual execution
 
+**⚠️ CRITICAL LIMITATION:** This backup provides NO real protection as it only creates local files that are lost when Repl environment resets.
+
+### GitHub Manual Sync (REQUIRED for real protection):
+```bash
+git add .
+git commit -m "Backup $(date)"
+git push origin main
+```
+**IMPORTANT:** Without GitHub sync, all local backups are worthless upon Repl reset.
+
 ### Alternative Backup Command (Advanced):
 ```bash
 bash scripts/backup-inteligente.sh
 ```
-**Note:** May have issues with PostgreSQL v17 server vs v16 client compatibility
+**Note:** May have issues with PostgreSQL v17 server vs v16 client compatibility and Git restrictions
 
 ### Alternative Backup Commands:
 ```bash
@@ -89,7 +99,7 @@ bash scripts/backup-github-automatico.sh
 bash scripts/backup-completo-emergencia.sh
 ```
 
-**Recommendation:** Use backup-simples-robusto.sh for guaranteed reliability. Sync GitHub manually when needed.
+**CRITICAL:** Local backup scripts provide NO protection against Repl environment loss. Manual GitHub sync is MANDATORY for any real backup protection.
 
 ### User Information
 - **GitHub Username**: pedroorlandi
