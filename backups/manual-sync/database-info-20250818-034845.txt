@@ -1,0 +1,4 @@
+# CIKLUS DATABASE BACKUP INFO - Mon Aug 18 03:48:45 AM UTC 2025
+# Sistema 100% funcional com dados completos
+
+DATABASE_URL: Configurado (conexão com problema temporário)

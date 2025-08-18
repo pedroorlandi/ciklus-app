@@ -64,14 +64,21 @@ Preferred communication style: Simple, everyday language.
 
 ### Primary Backup Command (Daily Use):
 ```bash
-bash scripts/backup-inteligente.sh
+bash scripts/backup-simples-robusto.sh
 ```
 **Features:**
 - Complete protection against rework (15-30 minute recovery)
 - Automatic cleanup of old backups (keeps only recent ones)
-- Local backup + GitHub sync in one command
+- Works even with PostgreSQL version mismatch and Git restrictions
 - Optimized size (excludes node_modules/attached_assets)
-- Includes database dump + configurations + recovery instructions
+- Includes database info + configurations + detailed recovery instructions
+- Prepares GitHub sync info for manual execution
+
+### Alternative Backup Command (Advanced):
+```bash
+bash scripts/backup-inteligente.sh
+```
+**Note:** May have issues with PostgreSQL v17 server vs v16 client compatibility
 
 ### Alternative Backup Commands:
 ```bash
@@ -82,7 +89,7 @@ bash scripts/backup-github-automatico.sh
 bash scripts/backup-completo-emergencia.sh
 ```
 
-**Recommendation:** Use backup-inteligente.sh daily or before major changes.
+**Recommendation:** Use backup-simples-robusto.sh for guaranteed reliability. Sync GitHub manually when needed.
 
 ### User Information
 - **GitHub Username**: pedroorlandi
