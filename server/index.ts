@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Middleware para separação de domínios
+// Middleware para separação de domínios - SERVIR ARQUIVOS ESTÁTICOS DIRETOS
 app.use((req, res, next) => {
   const host = req.get('host') || '';
   const path = req.path;
@@ -15,10 +15,23 @@ app.use((req, res, next) => {
 
   // Site institucional: ciklus.com.br ou www.ciklus.com.br
   if (host === 'ciklus.com.br' || host === 'www.ciklus.com.br') {
-    console.log(`[DOMAIN] Redirecting institutional domain ${host} to /institucional`);
-    // Para domínios institucionais, forçar rota "/institucional" do React
-    req.url = '/institucional';
-    console.log(`[DOMAIN] URL changed to: ${req.url}`);
+    console.log(`[DOMAIN] Serving static institutional site for ${host}`);
+    
+    // Servir arquivos estáticos do site-atual
+    const staticMiddleware = express.static('./site-atual');
+    return staticMiddleware(req, res, (staticErr) => {
+      // Se não encontrou arquivo estático específico, servir index.html
+      if (staticErr || req.method === 'GET') {
+        console.log(`[DOMAIN] Serving index.html for ${host}${path}`);
+        return res.sendFile('index.html', { 
+          root: './site-atual',
+          headers: {
+            'Content-Type': 'text/html; charset=utf-8',
+            'Cache-Control': 'no-cache'
+          }
+        });
+      }
+    });
   }
 
   // Para outros domínios (app.ciklus.com.br ou desenvolvimento), continua o fluxo normal
