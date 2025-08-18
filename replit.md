@@ -43,6 +43,9 @@ CIKLUS APP is a comprehensive full-stack web application designed for family fin
 ✓ **Site Institucional**: ciklus.com.br e www.ciklus.com.br servem arquivos estáticos do site
 ✓ **App Financeiro**: app.ciklus.com.br serve aplicação React completa com autenticação
 ✓ **Routing Updated**: Página inicial agora requer autenticação, site institucional via /institucional
+✓ **Login Buttons Fixed (August 18, 2025)**: All "ENTRAR NO SISTEMA" buttons corrected to redirect to app.ciklus.com.br
+✓ **Static Site Updated**: Rebuilt institutional static files with corrected JavaScript removing /api/login references
+✓ **User Flow Completed**: Visitors can now navigate from institutional domains directly to app login system
 
 ### Database Architecture Decision
 - **Primary Database**: Neon PostgreSQL (user-controlled) - `ep-lively-surf-ac3lxr0i` in São Paulo
