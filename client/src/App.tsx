@@ -39,8 +39,8 @@ function Router() {
   console.log('CURRENT ROUTE:', location.pathname);
   console.log('CURRENT DOMAIN:', currentHost);
 
-  // Se for domínio institucional, mostrar apenas o site institucional
-  if (isInstitutionalDomain) {
+  // Se for domínio institucional ou rota /institucional, mostrar apenas o site institucional
+  if (isInstitutionalDomain || location.pathname === '/institucional') {
     return <InstitutionalLanding />;
   }
 
