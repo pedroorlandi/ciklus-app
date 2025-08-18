@@ -30,10 +30,22 @@ import Configuracoes from "@/pages/configuracoes";
 
 function Router() {
   const location = useLocation();
-  const { isAuthenticated, isLoading } = useAuth();
-
+  
+  // Detectar se estamos nos domínios institucionais
+  const currentHost = window.location.hostname;
+  const isInstitutionalDomain = currentHost === 'ciklus.com.br' || currentHost === 'www.ciklus.com.br';
+  
   // Simple test to see if routing works
   console.log('CURRENT ROUTE:', location.pathname);
+  console.log('CURRENT DOMAIN:', currentHost);
+
+  // Se for domínio institucional, mostrar apenas o site institucional
+  if (isInstitutionalDomain) {
+    return <InstitutionalLanding />;
+  }
+
+  // Para app.ciklus.com.br ou desenvolvimento, verificar autenticação
+  const { isAuthenticated, isLoading } = useAuth();
 
   // Show loading while checking authentication
   if (isLoading) {
